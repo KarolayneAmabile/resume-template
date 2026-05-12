@@ -1,6 +1,6 @@
 % GitHub Repo and Documentation: https://github.com/celiobjunior/resume-template
 % Copyright © 2025 Celio B Junior. All rights reserved.
-% 
+%
 % Licensed under the Apache License, Version 2.0 (the "License");
 % you may not use this file except in compliance with the License.
 % You may obtain a copy of the License at
@@ -48,13 +48,13 @@
 
 % --- SETTINGS: METADATA / LINKS ---
 \hypersetup{
-    pdftitle={CV Your Name},   % PDF title
-    pdfauthor={Your Name},     % PDF author
-    colorlinks=true,           % Uses colored links (no boxes)
-    linkcolor=black,           % Internal links color
-    urlcolor=black,            % URLs color
-    citecolor=black,           % Citations color
-    bookmarksdepth=2           % Sidebar: section and subsection
+    pdftitle={Karolayne Amabile Borges},   % PDF title
+    pdfauthor={Karolayne Amabile Borges},  % PDF author
+    colorlinks=true,                       % Uses colored links (no boxes)
+    linkcolor=black,                       % Internal links color
+    urlcolor=black,                        % URLs color
+    citecolor=black,                       % Citations color
+    bookmarksdepth=2                       % Sidebar: section and subsection
 }
 
 % --- SETTINGS: TITLES ---
@@ -87,76 +87,80 @@
 \begin{document}
 
 % --- HEADER ---
-% Replace with your personal information
 \begin{center}
-    {\LARGE \textbf{Full Name}} 
+    {\LARGE \textbf{Karolayne Amabile Borges}}
     \\ [0.1cm]
-    City, State
+    Anápolis, Brazil
     {\textbullet}
-    \href{mailto:your.email@example.com}{your.email@example.com} 
+    \href{mailto:karolayneamabile@gmail.com}{karolayneamabile@gmail.com}
     {\textbullet}
-    \href{https://linkedin.com/in/username}{linkedin.com/in/username} 
+    \href{https://linkedin.com/in/karolayneamabile}{linkedin.com/in/karolayneamabile}
     {\textbullet}
-    \href{https://github.com/username}{github.com/username}
+    \href{https://github.com/KarolayneAmabile}{github.com/KarolayneAmabile}
 \end{center}
 
 % --- SECTIONS ---
 
-\section{Leadership Activities}
-    % Include volunteer work, academic clubs, or leadership positions
-    \cventry{Company/Organization Name}{Location (e.g., Remote or State, Country)}{Your Role/Position}{Start Date - End Date (e.g., Jan 2024 - Present)}
-        \begin{itemize}
-            % Use action verbs from README - quantify your impact whenever possible
-            \item Describe a meaningful leadership achievement with specific metrics.
-            \item Highlight how you managed teams, led initiatives, or drove outcomes.
-            \item Show impact on the organization or community you served.
-        \end{itemize}
+\section{Summary}
+
+Junior DevOps Engineer with hands-on experience building and maintaining cloud-native infrastructure
+on AWS and Kubernetes. Proven track record of automating deployments, implementing GitOps
+workflows, and establishing end-to-end observability in production environments. AWS Certified
+Cloud Practitioner. Currently pursuing a B.S. in Computer Science at IFG (Brazil).
 
 % ------
 
 \section{Experience}
-    % List your professional or academic experiences, most recent first
-    \cventry{Company/Organization Name}{Location (e.g., Remote or State, Country)}{Role (e.g., Software Engineer, Data Analyst)}{Start Date - End Date}
+    \cventry{Soliton}{Remote}{Junior DevOps Engineer}{April 2025 -- May 2026}
         \begin{itemize}
-            % Focus on achievements, not only technical details - use the STAR method (Situation, Task, Action, Result)
-            \item Achieved [specific result] through [action taken], resulting in [quantified impact].
-            \item Developed/Built/Created [what you did] using [technologies/methods], resulting in [benefit].
-            \item Collaborated with [team size/type] to [accomplish what], improving [metric] by [percentage/amount].
-        \end{itemize}
-
-    \cventry{Company/Organization Name}{Location (e.g., Remote or State, Country)}{Role (e.g., Junior Developer, Research Assistant)}{Start Date - End Date}
-        \begin{itemize}
-            \item Use active verbs from the action verbs table in README.md
-            \item Quantify your achievements whenever possible (numbers, percentages, deadlines)
-            \item Show progression and increasing responsibility across roles
-        \end{itemize}
-
-    \cventry{University/Research Institution}{Location (e.g., Remote or State, Country)}{Role (e.g., Undergraduate Researcher, Teaching Assistant)}{Start Date - End Date}
-        \begin{itemize}
-            \item Include research, academic work, or projects that demonstrate technical skills
-            \item Highlight publications, presentations, or meaningful findings
+            \item Reduced OpenEDX platform deployment time by 5$\times$ by replacing Tutor's
+            abstraction layer with a custom GitHub Actions pipeline (optimized cache + direct
+            Dockerfile), ArgoCD, and ArgoCD Image Updater.
+            \item Designed and managed multi-purpose Kubernetes clusters (security, monitoring,
+            operations, and production), enforcing environment isolation and governance per
+            namespace.
+            \item Developed reusable Terraform/OpenTofu modules and Helm charts to standardize
+            infrastructure provisioning across environments, reducing deployment inconsistencies
+            and enforcing GitOps practices.
+            \item Implemented a full-stack observability solution with Grafana, Prometheus, Loki,
+            and Alloy, enabling real-time monitoring and alerting for cloud-native workloads.
+            \item Automated secrets lifecycle management using HashiCorp Vault and External
+            Secrets Operator, eliminating hardcoded credentials from all repositories.
+            \item Built a RESTful API in Rust following hexagonal architecture, decoupling
+            domain logic from application and infrastructure layers.
         \end{itemize}
 
 % ------
 
 \section{Skills}
-    % Keep this section concise and use as many keywords as possible
-    % that are relevant to the role you want.
     \begin{itemize}
-        \item \textbf{Technical:} List your programming languages, frameworks, tools, and methodologies
-        \item \textbf{Languages:} Portuguese (Native), English (Proficiency Level), Third Language (Proficiency Level)
+        \item \textbf{Cloud \& IaC:} AWS, Terraform/OpenTofu, Terragrunt, Helmfile
+        \item \textbf{Kubernetes \& GitOps:} Kubernetes (EKS, k0s), ArgoCD, Helm,
+        Cilium, Cloudflared, cert-manager
+        \item \textbf{CI/CD:} GitHub Actions, ArgoCD, ArgoCD Image Updater
+        \item \textbf{Observability:} Grafana, Prometheus, Loki, Alloy
+        \item \textbf{Storage \& Backup:} Longhorn, Rook-Ceph, Velero
+        \item \textbf{Security \& Secrets:} HashiCorp Vault, Vaultwarden, External Secrets Operator
+        \item \textbf{Programming:} Rust
+        \item \textbf{Languages:} Portuguese (Native), English (Intermediate)
     \end{itemize}
 
 % ------
 
-% !!!!!!!!!!!!!!!!!!!!!!
-% Move this section to the beginning, after the header and before
-% your experiences, if you are looking for your first
-% job or an internship. Otherwise, leave it as is.
-% !!!!!!!!!!!!!!!!!!!!!!
+\section{Certifications}
+    \begin{itemize}
+        \item \textbf{AWS Certified Cloud Practitioner} — Amazon Web Services
+    \end{itemize}
+
+% ------
 
 \section{Education}
-    % Most recent education first
-    \cventry{Your University Name}{Location (e.g., Remote or State, Country)}{Your Degree Title (e.g., B.S. in Computer Science)}{Start Date - End Date (e.g., Jan 2020 - Dec 2024)}
+    \cventry{Instituto Federal de Goiás (IFG)}{Goiás, Brazil}
+    {B.S. in Computer Science}{2024 -- 2027}
+    \begin{itemize}
+        \item Academic Score: 8.0/10.0 — 5th semester
+        \item Relevant coursework: Computer Architecture, Operating Systems, Computer
+        Networks, Software Engineering, Data Structures, Databases
+    \end{itemize}
 
 \end{document}
